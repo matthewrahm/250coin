@@ -166,7 +166,7 @@ export function FeeSharing() {
           <Button
             variant="primary"
             size="lg"
-            href="https://twitter.com/messages/compose?recipient_id=250coin"
+            href="https://x.com/250Coin92141"
           >
             APPLY TO BE A SHILLER
             <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -174,7 +174,7 @@ export function FeeSharing() {
             </svg>
           </Button>
           <p className="mt-4 text-sm text-white/50 font-mono">
-            DM @250coin to claim an open shiller slot
+            DM @250Coin92141 to claim an open shiller slot
           </p>
         </motion.div>
       </div>

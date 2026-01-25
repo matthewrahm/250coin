@@ -18,7 +18,7 @@ export const CONFIG = {
   },
 
   // Socials
-  TWITTER_URL: import.meta.env.VITE_TWITTER_URL || "https://twitter.com/250coin",
+  TWITTER_URL: import.meta.env.VITE_TWITTER_URL || "https://x.com/250Coin92141",
   TELEGRAM_URL: import.meta.env.VITE_TELEGRAM_URL || "",
 
   // Refresh intervals (ms)

@@ -22,8 +22,8 @@ export const SHILLERS = [
   {
     rank: 1,
     label: "FOUNDER",
-    twitter: "@250coin",
-    twitterUrl: "https://twitter.com/250coin",
+    twitter: "@250Coin92141",
+    twitterUrl: "https://x.com/250Coin92141",
     filled: true,
     isFounder: true,
   },
