@@ -22,7 +22,7 @@ export const ROADMAP_MILESTONES = [
     subtitle: "$250K Market Cap",
     features: [
       "First holder slot opens",
-      "$250K market buy executed",
+      "$250K market buy unlocked",
       "The thesis fulfilled"
     ],
     icon: "trophy",
