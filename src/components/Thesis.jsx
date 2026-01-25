@@ -39,7 +39,7 @@ export function Thesis() {
             <br />
             We are 250. If we win, we buy $250K of our own token.
             <br />
-            <span className="text-primary">Simple as.</span>"
+            <span className="text-primary">Simple as that.</span>"
           </p>
         </motion.div>
 

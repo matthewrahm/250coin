@@ -3,6 +3,17 @@
 
 export const ROADMAP_MILESTONES = [
   {
+    id: 0,
+    marketCap: 25000,
+    title: "DEX Paid",
+    subtitle: "$25K Market Cap",
+    features: [
+      "DEX listing fee paid"
+    ],
+    icon: "check",
+    isPrimary: false,
+  },
+  {
     id: 1,
     marketCap: 100000,
     title: "The Beginning",
