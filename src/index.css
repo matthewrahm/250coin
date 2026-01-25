@@ -1,0 +1,130 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'SF Pro', system-ui, sans-serif;
+  background-color: #0A0F0D;
+  color: #FFFFFF;
+  overflow-x: hidden;
+  min-height: 100vh;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0A0F0D;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(94, 186, 125, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(94, 186, 125, 0.5);
+}
+
+/* Glass card base */
+@layer components {
+  .glass-card {
+    @apply relative overflow-hidden;
+    background: rgba(94, 186, 125, 0.08);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(94, 186, 125, 0.2);
+    border-radius: 24px;
+    box-shadow:
+      0 8px 32px rgba(0, 0, 0, 0.3),
+      inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  }
+
+  .glass-card-sm {
+    @apply glass-card;
+    border-radius: 16px;
+  }
+
+  .glass-button {
+    @apply relative overflow-hidden px-6 py-3 font-semibold transition-all duration-200;
+    background: rgba(94, 186, 125, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(94, 186, 125, 0.3);
+    border-radius: 12px;
+    color: #5EBA7D;
+  }
+
+  .glass-button:hover {
+    background: rgba(94, 186, 125, 0.25);
+    border-color: rgba(94, 186, 125, 0.5);
+    box-shadow: 0 0 20px rgba(94, 186, 125, 0.3);
+    transform: scale(1.02);
+  }
+
+  .glass-button-primary {
+    @apply glass-button;
+    background: linear-gradient(135deg, rgba(94, 186, 125, 0.3), rgba(94, 186, 125, 0.15));
+    color: #FFFFFF;
+  }
+
+  .glass-button-primary:hover {
+    background: linear-gradient(135deg, rgba(94, 186, 125, 0.5), rgba(94, 186, 125, 0.3));
+    box-shadow: 0 0 30px rgba(94, 186, 125, 0.4);
+  }
+}
+
+/* Glow effects */
+.glow-text {
+  text-shadow: 0 0 20px rgba(94, 186, 125, 0.5);
+}
+
+.glow-border {
+  box-shadow: 0 0 20px rgba(94, 186, 125, 0.3);
+}
+
+/* Price flash animation */
+@keyframes priceFlash {
+  0% { color: #5EBA7D; text-shadow: 0 0 20px rgba(94, 186, 125, 0.8); }
+  100% { color: #FFFFFF; text-shadow: none; }
+}
+
+.price-flash {
+  animation: priceFlash 0.5s ease-out;
+}
+
+/* Stagger animations */
+.stagger-1 { animation-delay: 0ms; }
+.stagger-2 { animation-delay: 100ms; }
+.stagger-3 { animation-delay: 200ms; }
+.stagger-4 { animation-delay: 300ms; }
+.stagger-5 { animation-delay: 400ms; }
+
+/* Background gradient */
+.bg-gradient-radial {
+  background: radial-gradient(ellipse at 50% 0%, rgba(94, 186, 125, 0.15) 0%, transparent 50%);
+}
+
+/* Section fade in */
+.section-animate {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.section-animate.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
