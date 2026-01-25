@@ -77,11 +77,20 @@ export function StateModal({ stateCode, isOpen, onClose }) {
                 </div>
               ) : (
                 <div className="text-center py-8">
-                  <p className="text-white/50 font-mono mb-2">
+                  <p className="text-white/50 font-mono mb-4">
                     No posts from {stateName} yet.
                   </p>
-                  <p className="text-primary font-mono text-lg">
-                    Be the first!
+                  <a
+                    href="https://x.com/250Coin92141"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 bg-primary/20 hover:bg-primary/30 border border-primary/50 rounded-lg text-primary font-mono transition-colors"
+                  >
+                    <TwitterIcon className="w-5 h-5" />
+                    DM US YOUR TWEET
+                  </a>
+                  <p className="text-white/30 text-sm font-mono mt-3">
+                    Include: "Post for {stateName}: [your tweet link]"
                   </p>
                 </div>
               )}
