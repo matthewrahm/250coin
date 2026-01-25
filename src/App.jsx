@@ -46,7 +46,7 @@ function App() {
         <Navbar />
         <main>
           <Hero />
-          <Thesis />
+          <USMap />
           <Roadmap />
 
           {/* Banner divider */}
@@ -64,7 +64,7 @@ function App() {
           </div>
 
           <Chart />
-          <USMap />
+          <Thesis />
           <FeeSharing />
         </main>
         <Footer />
