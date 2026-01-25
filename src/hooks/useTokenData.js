@@ -18,7 +18,8 @@ export function useTokenData() {
 
   const fetchData = useCallback(async () => {
     // If using placeholder, return mock data
-    if (CONFIG.DEXSCREENER_PAIR === "PLACEHOLDER_PAIR_ADDRESS") {
+    if (CONFIG.CONTRACT_ADDRESS === "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" ||
+        CONFIG.CONTRACT_ADDRESS.includes("PLACEHOLDER")) {
       setData(MOCK_DATA)
       setLoading(false)
       setLastUpdate(new Date())

@@ -34,12 +34,13 @@ export function Chart() {
         {/* Chart embed */}
         <GlassCard className="mb-8 overflow-hidden" hover={false}>
           <div className="aspect-[16/9] md:aspect-[21/9] w-full">
-            {CONFIG.DEXSCREENER_PAIR === "PLACEHOLDER_PAIR_ADDRESS" ? (
-              // Placeholder when no pair address
+            {CONFIG.CONTRACT_ADDRESS === "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" ||
+             CONFIG.CONTRACT_ADDRESS.includes("PLACEHOLDER") ? (
+              // Placeholder when no contract address
               <div className="w-full h-full flex items-center justify-center bg-bg-mid rounded-lg">
                 <div className="text-center">
                   <p className="text-white/50 font-mono text-lg mb-2">Chart Loading...</p>
-                  <p className="text-white/30 font-mono text-sm">Add DEXSCREENER_PAIR to config.js</p>
+                  <p className="text-white/30 font-mono text-sm">Set VITE_CONTRACT_ADDRESS in environment</p>
                 </div>
               </div>
             ) : (
