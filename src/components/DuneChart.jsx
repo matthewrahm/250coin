@@ -1,7 +1,21 @@
+import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { GlassCard } from './ui/GlassCard'
 
+const DUNE_BASE_URL = 'https://dune.com/embeds/4903533/8118614'
+const REFRESH_INTERVAL = 300000 // 5 minutes
+
 export function DuneChart() {
+  const [iframeSrc, setIframeSrc] = useState(`${DUNE_BASE_URL}?t=${Date.now()}`)
+
+  // Reload iframe periodically to get fresh data
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIframeSrc(`${DUNE_BASE_URL}?t=${Date.now()}`)
+    }, REFRESH_INTERVAL)
+    return () => clearInterval(interval)
+  }, [])
+
   return (
     <section className="relative py-20 px-4">
       <div className="max-w-6xl mx-auto">
@@ -25,12 +39,13 @@ export function DuneChart() {
         <GlassCard className="overflow-hidden" hover={false}>
           <div className="w-full" style={{ minHeight: '420px' }}>
             <iframe
-              src="https://dune.com/embeds/4903533/8118614"
+              src={iframeSrc}
               frameBorder="0"
               width="100%"
               height="420"
               style={{ borderRadius: '16px', background: 'transparent' }}
               title="Pumpfun Revenue"
+              sandbox="allow-scripts allow-same-origin allow-popups"
             />
           </div>
         </GlassCard>
