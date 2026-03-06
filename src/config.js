@@ -20,7 +20,7 @@ export const CONFIG = {
   },
 
   // Socials
-  TWITTER_URL: import.meta.env.VITE_TWITTER_URL || "",
+  TWITTER_URL: import.meta.env.VITE_TWITTER_URL || "https://x.com/The250Coin",
   TELEGRAM_URL: import.meta.env.VITE_TELEGRAM_URL || "",
 
   // Refresh intervals (ms)
