@@ -19,21 +19,23 @@ export function Footer() {
             <IconButton href={CONFIG.TWITTER_URL} aria-label="Twitter/X">
               <TwitterIcon className="w-5 h-5" />
             </IconButton>
-            <IconButton href={CONFIG.PUMP_FUN_URL} aria-label="Pump.fun">
-              <PumpIcon className="w-5 h-5" />
-            </IconButton>
-            <IconButton href={CONFIG.DEXSCREENER_URL} aria-label="DexScreener">
+<IconButton href={CONFIG.DEXSCREENER_URL} aria-label="DexScreener">
               <ChartIcon className="w-5 h-5" />
             </IconButton>
           </div>
 
-          {/* Contract Address */}
+          {/* Contract Address — links to Pump.fun */}
           <div className="mb-6">
             <p className="text-xs font-mono text-primary-light mb-2">CONTRACT ADDRESS</p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-2">
-              <code className="text-sm font-mono text-white/80 bg-bg-mid px-4 py-2 rounded-lg break-all">
+              <a
+                href={CONFIG.PUMP_FUN_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-sm font-mono text-white/80 bg-bg-mid px-4 py-2 rounded-lg break-all hover:text-primary transition-colors"
+              >
                 {CONFIG.CONTRACT_ADDRESS}
-              </code>
+              </a>
               <CopyButton text={CONFIG.CONTRACT_ADDRESS} />
             </div>
           </div>
@@ -43,8 +45,8 @@ export function Footer() {
 
           {/* Attribution */}
           <p className="text-sm font-mono text-white/40">
-            Built for{' '}
-            <span className="text-primary/70">Pump.fun Hackathon</span>
+            Built to push Pumpfun past{' '}
+            <span className="text-primary/70">$1 Billion</span>
           </p>
 
           {/* Logo */}
@@ -59,7 +61,7 @@ export function Footer() {
             }}
             transition={{ duration: 3, repeat: Infinity }}
           >
-            250
+            $250K
           </motion.p>
         </motion.div>
       </div>

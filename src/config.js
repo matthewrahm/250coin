@@ -4,7 +4,9 @@ export const CONFIG = {
   CONTRACT_ADDRESS: import.meta.env.VITE_CONTRACT_ADDRESS || "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 
   // URLs
-  PUMP_FUN_URL: import.meta.env.VITE_PUMP_FUN_URL || "https://pump.fun/PLACEHOLDER",
+  get PUMP_FUN_URL() {
+    return import.meta.env.VITE_PUMP_FUN_URL || `https://pump.fun/coin/${this.CONTRACT_ADDRESS}`
+  },
 
   // Derived from CONTRACT_ADDRESS
   get DEXSCREENER_URL() {
