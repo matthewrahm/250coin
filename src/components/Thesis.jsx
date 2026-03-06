@@ -4,18 +4,18 @@ import { GlassCard } from './ui/GlassCard'
 const steps = [
   {
     number: '01',
-    title: 'WIN',
-    description: '250 gets selected as one of the 12 Pump.fun hackathon winners',
+    title: '$250K AWAY',
+    description: 'Pumpfun is only $250,000 from hitting $1 BILLION in lifetime revenue. That\'s roughly a third of a day.',
   },
   {
     number: '02',
-    title: 'BUY',
-    description: 'We take the full $250,000 prize and market buy our own token',
+    title: 'THE RUNNER',
+    description: '$250K is the coin built to push Pumpfun over that milestone — and become a $1B market cap runner itself.',
   },
   {
     number: '03',
-    title: 'PUMP',
-    description: '$250K buy = massive green candle for all holders',
+    title: 'HISTORY',
+    description: 'Two milestones. One coin. Platform revenue + market cap. We make history together.',
   },
 ]
 
@@ -35,11 +35,11 @@ export function Thesis() {
             THE <span className="text-primary">THESIS</span>
           </h2>
           <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto font-mono">
-            "Pump.fun is giving $250K to 12 projects.
+            "Pumpfun is $250K from $1 BILLION in lifetime revenue.
             <br />
-            We are 250. If we win, we buy $250K of our own token.
+            That milestone deserves a runner.
             <br />
-            <span className="text-primary">Simple as that.</span>"
+            <span className="text-primary">So we made $250K.</span>"
           </p>
         </motion.div>
 

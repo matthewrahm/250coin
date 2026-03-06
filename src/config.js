@@ -1,6 +1,6 @@
 export const CONFIG = {
   // Token Info
-  TOKEN_NAME: import.meta.env.VITE_TOKEN_NAME || "250",
+  TOKEN_NAME: import.meta.env.VITE_TOKEN_NAME || "250K",
   CONTRACT_ADDRESS: import.meta.env.VITE_CONTRACT_ADDRESS || "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX",
 
   // URLs

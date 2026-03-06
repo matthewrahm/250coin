@@ -3,8 +3,7 @@ import { Hero } from './components/Hero'
 import { Thesis } from './components/Thesis'
 import { Roadmap } from './components/Roadmap'
 import { Chart } from './components/Chart'
-import { USMap } from './components/USMap'
-import { FeeSharing } from './components/FeeSharing'
+import { DuneChart } from './components/DuneChart'
 import { Footer } from './components/Footer'
 import background from './assets/background.png'
 import banner from './assets/banner.png'
@@ -46,7 +45,6 @@ function App() {
         <Navbar />
         <main>
           <Hero />
-          <USMap />
           <Roadmap />
 
           {/* Banner divider */}
@@ -63,9 +61,9 @@ function App() {
             </div>
           </div>
 
+          <DuneChart />
           <Chart />
           <Thesis />
-          <FeeSharing />
         </main>
         <Footer />
       </div>

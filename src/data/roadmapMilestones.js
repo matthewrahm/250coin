@@ -1,81 +1,56 @@
-// Roadmap milestones based on market cap
-// Each milestone unlocks new features and benefits
+// Roadmap milestones — focused on pushing Pumpfun to $1B revenue
 
 export const ROADMAP_MILESTONES = [
   {
     id: 0,
-    marketCap: 25000,
-    title: "DEX Paid",
-    subtitle: "$25K Market Cap",
+    marketCap: 50000,
+    title: "LAUNCH",
+    subtitle: "$50K Market Cap",
     features: [
-      "DEX listing fee paid"
-    ],
-    icon: "check",
-    isPrimary: false,
-  },
-  {
-    id: 1,
-    marketCap: 100000,
-    title: "The Beginning",
-    subtitle: "$100K Market Cap",
-    features: [
-      "First shiller slot opens",
-      "Community recognition begins",
-      "Foundation established"
+      "Token live on Pumpfun",
+      "Community starts forming",
+      "Every trade contributes fees toward $1B revenue"
     ],
     icon: "rocket",
     isPrimary: false,
   },
   {
-    id: 2,
+    id: 1,
     marketCap: 250000,
-    title: "THE PRIZE",
+    title: "$250K CONTRIBUTED",
     subtitle: "$250K Market Cap",
     features: [
-      "First holder slot opens",
-      "$250K market buy unlocked",
-      "The thesis fulfilled"
+      "Pumpfun crosses $1 BILLION in lifetime revenue",
+      "We were the coin that pushed it over",
+      "Historic milestone achieved"
     ],
     icon: "trophy",
     isPrimary: true,
   },
   {
-    id: 3,
-    marketCap: 500000,
-    title: "Expansion",
-    subtitle: "$500K Market Cap",
+    id: 2,
+    marketCap: 1000000,
+    title: "PUMPFUN SHOUTOUT",
+    subtitle: "$1M Market Cap",
     features: [
-      "Second shiller + holder slots",
-      "Holder dashboard beta launch",
-      "Enhanced fee tracking"
+      "Campaign for official Pumpfun recognition",
+      "The coin that hit the $1B milestone gets its spotlight",
+      "Community rallies for the shoutout"
     ],
     icon: "chart",
     isPrimary: false,
   },
   {
-    id: 4,
-    marketCap: 1000000,
-    title: "Full Operation",
-    subtitle: "$1M Market Cap",
-    features: [
-      "All 6 fee sharing slots active",
-      "Full dashboard with fee tracking",
-      "Complete ecosystem live"
-    ],
-    icon: "users",
-    isPrimary: false,
-  },
-  {
-    id: 5,
+    id: 3,
     marketCap: 5000000,
-    title: "Community Governance",
+    title: "LEGENDARY STATUS",
     subtitle: "$5M Market Cap",
     features: [
-      "Governance voting enabled",
-      "Community-driven decisions",
-      "DAO structure implemented"
+      "Cemented as the coin that made Pumpfun history",
+      "Community-driven next chapter",
+      "The coin that changed everything"
     ],
-    icon: "vote",
+    icon: "users",
     isPrimary: false,
   },
 ]
@@ -86,7 +61,6 @@ export function getMilestoneStatus(milestone, currentMarketCap) {
     return 'completed'
   }
 
-  // Find the next milestone
   const sortedMilestones = [...ROADMAP_MILESTONES].sort((a, b) => a.marketCap - b.marketCap)
   const nextMilestone = sortedMilestones.find(m => currentMarketCap < m.marketCap)
 
