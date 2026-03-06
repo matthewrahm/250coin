@@ -45,6 +45,7 @@ function App() {
         <Navbar />
         <main>
           <Hero />
+          <DuneChart />
           <Roadmap />
 
           {/* Banner divider */}
@@ -61,7 +62,6 @@ function App() {
             </div>
           </div>
 
-          <DuneChart />
           <Chart />
           <Thesis />
         </main>

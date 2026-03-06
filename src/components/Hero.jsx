@@ -21,7 +21,7 @@ export function Hero() {
   const logoOpacity = Math.max(0, 1 - scrollY / 400)
 
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center px-4 pt-20 pb-32 md:pb-20 overflow-hidden">
+    <section className="relative min-h-[70vh] flex flex-col items-center justify-center px-4 pt-20 pb-16 md:pb-12 overflow-hidden">
       {/* Background gradient */}
       <div className="absolute inset-0 bg-gradient-radial pointer-events-none" />
 
@@ -60,7 +60,7 @@ export function Hero() {
           <motion.img
             src={logo}
             alt="250"
-            className="w-[280px] md:w-[400px] lg:w-[500px] mx-auto"
+            className="w-[180px] md:w-[260px] lg:w-[320px] mx-auto"
             animate={{
               filter: [
                 'drop-shadow(0 0 20px rgba(94, 186, 125, 0.4))',

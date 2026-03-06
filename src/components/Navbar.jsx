@@ -17,8 +17,6 @@ export function Navbar() {
 
   const navLinks = [
     { label: 'CHART', href: '#chart' },
-    { label: 'MAP', href: '#map' },
-    { label: 'REWARDS', href: '#rewards' },
   ]
 
   return (
@@ -87,8 +85,6 @@ export function Navbar() {
                 className="flex flex-col items-center p-2 text-white/70 hover:text-primary transition-colors"
               >
                 {link.label === 'CHART' && <ChartIcon />}
-                {link.label === 'MAP' && <MapIcon />}
-                {link.label === 'REWARDS' && <RewardsIcon />}
                 <span className="text-xs font-mono mt-1">{link.label}</span>
               </a>
             ))}
