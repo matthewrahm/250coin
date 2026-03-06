@@ -5,17 +5,17 @@ const steps = [
   {
     number: '01',
     title: '$250K AWAY',
-    description: 'Pumpfun is only $250,000 from hitting $1 BILLION in lifetime revenue. That\'s roughly a third of a day.',
+    description: 'Pumpfun is only $250,000 from $1 BILLION in lifetime revenue. The gap has never been smaller.',
   },
   {
     number: '02',
-    title: 'THE RUNNER',
-    description: '$250K is the coin built to push Pumpfun over that milestone — and become a $1B market cap runner itself.',
+    title: '$25M VOLUME',
+    description: 'Hit $25M in volume on this coin alone and we push Pumpfun past the $1B milestone. All on one coin.',
   },
   {
     number: '03',
     title: 'HISTORY',
-    description: 'Two milestones. One coin. Platform revenue + market cap. We make history together.',
+    description: 'The coin that completed the mission. $250K of revenue from one ticker. Let\'s make history.',
   },
 ]
 
@@ -35,11 +35,11 @@ export function Thesis() {
             THE <span className="text-primary">THESIS</span>
           </h2>
           <p className="text-lg md:text-xl text-white/70 max-w-2xl mx-auto font-mono">
-            "Pumpfun is $250K from $1 BILLION in lifetime revenue.
+            "Pumpfun is only $250,000 away from <span className="text-primary">$1 BILLION</span> in lifetime revenue.
+            <br /><br />
+            This is $250K Coin. Hit $25M in volume and we complete the mission.
             <br />
-            That milestone deserves a runner.
-            <br />
-            <span className="text-primary">So we made $250K.</span>"
+            <span className="text-primary">Let's make history.</span>"
           </p>
         </motion.div>
 

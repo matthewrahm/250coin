@@ -83,7 +83,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
         >
-          PUMPFUN IS <span className="text-primary">$250K</span> FROM $1 BILLION
+          <span className="text-primary">$250K</span> FROM $1 BILLION. LET'S MAKE HISTORY.
         </motion.p>
 
         {/* Stats */}
